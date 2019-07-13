@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/vacation/static/css/main.34de6062.chunk.css",
+    "main.js": "/vacation/static/js/main.6072fae4.chunk.js",
+    "main.js.map": "/vacation/static/js/main.6072fae4.chunk.js.map",
+    "runtime~main.js": "/vacation/static/js/runtime~main.ea516ffb.js",
+    "runtime~main.js.map": "/vacation/static/js/runtime~main.ea516ffb.js.map",
+    "static/css/2.32bbf376.chunk.css": "/vacation/static/css/2.32bbf376.chunk.css",
+    "static/js/2.1eaa787c.chunk.js": "/vacation/static/js/2.1eaa787c.chunk.js",
+    "static/js/2.1eaa787c.chunk.js.map": "/vacation/static/js/2.1eaa787c.chunk.js.map",
+    "index.html": "/vacation/index.html",
+    "precache-manifest.66f3f2151f4a39eba738930b0e9fb527.js": "/vacation/precache-manifest.66f3f2151f4a39eba738930b0e9fb527.js",
+    "service-worker.js": "/vacation/service-worker.js",
+    "static/css/2.32bbf376.chunk.css.map": "/vacation/static/css/2.32bbf376.chunk.css.map",
+    "static/css/main.34de6062.chunk.css.map": "/vacation/static/css/main.34de6062.chunk.css.map",
+    "static/media/grebec.jpg": "/vacation/static/media/grebec.c38ba5ee.jpg"
+  }
+}
