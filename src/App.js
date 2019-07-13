@@ -34,8 +34,12 @@ function App() {
           </h1>
           <div className="p-4">
             <img
-              width="100%"
-              style={{ borderRadius: ".25em" }}
+              width="40%"
+              style={{
+                borderRadius: ".25em",
+                minWidth: "280px",
+                maxWidth: "560px"
+              }}
               src={grebec}
               alt=""
             />
