@@ -1,9 +1,6 @@
 import React from "react";
 import moment from "moment";
-import grebec from "./grebec.jpg";
 import ship from "./pirate_boat.png";
-import vacation from "./vacation.jpg";
-import office from "./office.jpg";
 import "bootstrap/dist/css/bootstrap-grid.min.css";
 
 const humanizeUADate = daysNumber => {
@@ -19,7 +16,7 @@ const humanizeUADate = daysNumber => {
 };
 
 function App() {
-  const startDate = new Date();
+  const startDate = new Date().getTime() + 7200000;
   const endDate = moment("2020-01-09T00:00:00.000Z").toDate();
   const diff = moment.duration(endDate - startDate).asDays();
   const diffFormatted = Math.ceil(diff);
@@ -27,7 +24,6 @@ function App() {
   const VACATION_DURATION = 17;
 
   const daysArr = Array(VACATION_DURATION).fill("mock");
-
 
   return (
     <div className="container">
@@ -51,9 +47,11 @@ function App() {
                 transform: "rotateY(180deg)",
                 display: "block",
                 visibility: `${
-                  index + 1 === VACATION_DURATION - diffFormatted ? "visible" : "hidden"
+                  index === VACATION_DURATION - diffFormatted
+                    ? "visible"
+                    : "hidden"
                 }`,
-                margin: '10px auto'
+                margin: "10px auto"
               }}
               src={ship}
               alt=""
@@ -64,15 +62,16 @@ function App() {
                 height: "45px",
                 borderRadius: "50%",
                 backgroundColor: `${
-                  index  === VACATION_DURATION - diffFormatted ? "lightblue" : "blue"
+                  index === VACATION_DURATION - diffFormatted
+                    ? "#186811"
+                    : index < VACATION_DURATION - diffFormatted
+                    ? "#827b7b"
+                    : "blue"
                 }`,
-                backgroundColor: `${
-                  index  < VACATION_DURATION - diffFormatted ? "#827b7b" : "blue"
-                }`,
-                color: '#fff',
-                textAlign: 'center',
-                lineHeight: '45px',
-                margin: '5px auto'
+                color: "#fff",
+                textAlign: "center",
+                lineHeight: "45px",
+                margin: "5px auto"
               }}
             >
               {index + 1}
