@@ -1,6 +1,9 @@
 import React from "react";
 import moment from "moment";
+
 import ship from "./pirate_boat.png";
+import vacation from "./vacation.jpg";
+
 import "bootstrap/dist/css/bootstrap-grid.min.css";
 
 const humanizeUADate = daysNumber => {
@@ -30,7 +33,7 @@ function App() {
       <div className="row">
         <div className="col-12" style={{ textAlign: "center" }}>
           <h1 style={{ padding: 0 }}>
-            До повернення грєбца залишилось
+            До повернення цього розбійника залишилось
             <br />
             <bold style={{ color: "blue" }}>
               <i> {humanizeUADate(diffFormatted)}</i>
@@ -78,6 +81,22 @@ function App() {
             </div>
           </div>
         ))}
+        <div
+          style={{
+            padding: "20px",
+            marginTop: "30px",
+          }}
+          s
+        >
+          <img
+            src={vacation}
+            alt=""
+            style={{
+              width: "100%",
+              boxShadow: "-1px -1px 15px blue"
+            }}
+          />
+        </div>
       </div>
     </div>
   );
